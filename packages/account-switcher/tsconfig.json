@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ES2020", "DOM"],
+    "strict": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "outDir": "dist",
+    "rootDir": "./src",
+    "declaration": true
+  },
+  "include": ["src/**/*.ts"]
+}

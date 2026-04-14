@@ -1,0 +1,42 @@
+{
+  "name": "@praval/prvl-account-switcher-component",
+  "description": "account switcher component",
+  "author": "Likitha Kattamudi",
+  "version": "1.0.6",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./pr-account-switcher.js": "./dist/pr-account-switcher.js",
+    "./PrAccountSwitcher": "./dist/react/PrAccountSwitcher.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prepare": "npm run clean && npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@material/web": "2.4.0",
+    "@praval/prvl-tree-component": "^1.0.15",
+    "lit": "^3.2.1",
+    "mobx": "^6.12.3",
+    "mobx-persist-store": "^1.1.5"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^4.9.5"
+  },
+  "files": [
+    "/dist",
+    "package.json"
+  ]
+}

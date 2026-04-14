@@ -1,0 +1,1 @@
+{"version":3,"file":"pr-tree.js","sourceRoot":"","sources":["../src/pr-tree.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,MAAM,EAAE,MAAM,aAAa,CAAC;AAErC,cAAc,CAAC,MAAM,CAAC,SAAS,EAAE,MAAM,CAAC,CAAC;AAEzC,OAAO,EAAE,MAAM,EAAE,CAAC","sourcesContent":["\nimport { PrTree } from './PrTree.js';\n\ncustomElements.define('pr-tree', PrTree);\n\nexport { PrTree };"]}

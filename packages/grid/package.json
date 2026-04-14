@@ -1,0 +1,43 @@
+{
+  "name": "@praval/prvl-grid-component",
+  "description": "grid component",
+  "author": "Likitha Kattamudi",
+  "version": "1.0.22",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./pr-grid.js": "./dist/pr-grid.js",
+    "./pr-grid-nav.js": "./dist/pr-grid-nav.js",
+    "./pr-grid-no-rows.js": "./dist/pr-grid-no-rows.js",
+    "./PrGrid": "./dist/react/PrGrid.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prepare": "npm run clean && npm run build",
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@lit/react": "^1.0.8",
+    "@material/web": "2.4.0",
+    "@praval/prvl-grid-component": "^1.0.8",
+    "@praval/prvl-sub-grid-component": "^1.0.0",
+    "lit": "^3.2.1",
+    "rollup-plugin-replace": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^4.9.5"
+  },
+  "files": [
+    "/dist",
+    "package.json"
+  ]
+}

@@ -1,0 +1,16 @@
+[13:09:26.501] [INFO] storybook v10.2.8
+[13:09:26.949] [DEBUG] Getting package.json info for C:/Users/likitha.k/Desktop/PRVL-UI-COMPONENTS/package.json...
+[13:09:27.057] [ERROR] [38;2;241;97;97mSyntaxError: Unexpected identifier 'pluginContainer'[39m
+    at compileSourceTextModule (node:internal/modules/esm/utils:318:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:111:18)
+    at #translate (node:internal/modules/esm/loader:473:20)
+    at afterLoad (node:internal/modules/esm/loader:529:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:534:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:571:36)
+    at afterResolve (node:internal/modules/esm/loader:624:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:630:12)
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:143:33)
+    at ModuleJob.link (node:internal/modules/esm/module_job:228:17)
+[13:09:27.060] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.
+[13:09:33.470] [PROMPT] Would you like to send anonymous crash reports to improve Storybook and fix bugs faster? {"choice":true}

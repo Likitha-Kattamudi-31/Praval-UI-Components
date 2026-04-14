@@ -8,13 +8,19 @@
     "build": "lerna run build",
     "build:all": "lerna run build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test": "vitest"
   },
   "devDependencies": {
+    "@open-wc/testing": "^4.0.0",
     "@storybook/web-components-vite": "^10.2.8",
+    "@testing-library/dom": "^10.4.1",
+    "@vitest/ui": "^4.1.1",
+    "jsdom": "^29.0.1",
     "lerna": "^9.0.4",
     "storybook": "^10.2.8",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.1"
   },
   "version": "0.0.1"
 }

@@ -1,0 +1,31 @@
+import { NestedAccounts } from '../types.js';
+declare class AuthedUserState {
+    constructor();
+    account_number: string;
+    email: string;
+    name: string;
+    givenName: string;
+    familyName: string;
+    auth_time: string;
+    access_token: string;
+    id_token: string;
+    bearer: string;
+    account_hierarchy?: NestedAccounts;
+    selected_account?: NestedAccounts;
+    setAccount({ accountNumber, email, name, givenName, familyName, authTime, accessToken, idToken, bearer, }: Record<string, string>): void;
+    getAccount(): Record<string, string>;
+    getAccountNumber(): string;
+    getAccessToken(): string;
+    getBearer(): string;
+    getIdToken(): string;
+    setAccountHierarchy(accountHierarchy: any): void;
+    getAccountHierarchy(): NestedAccounts | undefined;
+    setSelectedAccount(selectedAccount: NestedAccounts | undefined): void;
+    getSelectedAccount(): NestedAccounts | undefined;
+    get isHydrated(): boolean;
+    hydrateStore(): Promise<void>;
+    clearStoredDate(): Promise<void>;
+    getStoredData(): Promise<this | null>;
+}
+export declare const authedUser: AuthedUserState;
+export {};

@@ -1,0 +1,31 @@
+import { LitElement, TemplateResult } from 'lit';
+import '@praval/prvl-icon-component/pr-icon.js';
+import { PPrTreeNode } from './PPrTreeNode.js';
+import { Appearance } from './PrTree.js';
+export declare class PrTreeNode extends LitElement {
+    static readonly styles: import("lit").CSSResult[];
+    isActiveTreeNode: boolean;
+    isExpanded: boolean;
+    isSelected: boolean;
+    level: number;
+    node: PPrTreeNode;
+    checkboxEnabled: boolean;
+    appearance: Appearance;
+    hasIcon: boolean;
+    removeChevron: boolean;
+    allowMultiLine: boolean;
+    scrollToActive: boolean;
+    disabled: boolean;
+    selectNodeOnClick: boolean;
+    private _hasScrolledToActive;
+    private _treeNodeContainer;
+    private hasChildren;
+    private getChevron;
+    private renderCheckbox;
+    private onNodeClick;
+    private onNodeToggle;
+    private onNodeCheck;
+    private handleNodeClick;
+    protected render(): TemplateResult<1>;
+    protected updated(): void;
+}
